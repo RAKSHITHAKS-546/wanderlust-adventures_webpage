@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    
+  font-family: "Open Sans", sans-serif;
+  
+}
+
+.text-center{
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color:inherit;
+}
+.section-title{
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 10px;
+    
+}
+.section-lead{
+     font-size: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+.navbar{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+    align-items: center;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+}
+
+.navbar-links {
+     list-style:none;
+     display: flex;
+     gap: 20px;
+     flex-wrap: wrap;
+    }
+
+.hero{
+    height: 450px;
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('/wanderlust-kannada-images-main/images/hero.png');
+    color: aliceblue;
+    text-align: center;
+    padding-top: 100px;
+
+
+}
+
+.hero-title{
+    font-size: 75px;
+}
+
+.hero-lead{
+    font-size:15px;
+}
+
+.hero-btn{
+    font-size:15px;
+    background-color: rgb(32, 113, 199);
+    color: aliceblue;
+    padding: 8px;
+    display: inline-block;
+    margin-top: 25px;
+    font-weight: bold;
+
+}
+
+.hero-btn:hover{
+    background: rgb(238, 237, 244);
+}
+
+.about{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 30px;
+    padding-right: 30px;
+}
+
+.about-layout{
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    gap:20px;
+    align-items: center;
+
+    
+
+}
+
+
+.about-text{
+    line-height: 1.8;
+}
+
+.about-img{
+    margin:auto;
+}
+
+.value{
+    background:rgb(234, 234, 149);
+    padding:35px;
+    
+}
+
+.value-flex{
+    display: flex;
+    text-align: center;
+    gap:20px;
+    
+}
+
+.desienations{
+    padding: 35px;
+}
+.destenations-grid{
+    
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:45px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.grid-item img{
+    width:100%;
+    border:5px soild rgb(248, 248, 233);
+    border-radius: 15px;
+
+}
+
+.grid-item{
+    transition: 0.3s ease;
+}
+
+.grid-item:hover img{
+    transform: scale(1.1);
+    margin-bottom:20px;
+    transition: 0.3s ease;
+}
+
+.contact{
+    background:rgb(138, 213, 237) ;
+    padding: 35px;
+}
+
+.contact-card{
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    width:750px;
+    max-width: 100%;
+    margin:auto;
+}
+
+label{
+    display:block ;
+    margin-bottom:10px;
+}
+
+input,
+textarea{
+    width: 100%;
+    font-size:20px;
+    padding:5px;
+    margin-bottom:10px;
+    font-family:inherit ;
+}
+
+.btn-primary{
+    background-color: rgb(15, 120, 218);
+    border: none;
+    color:aliceblue;
+    padding: 10px;
+    font-weight:bold;
+    border-radius: 10px;
+    display:inline-block;
+    
+}
+
+.btn-primary:hover{
+    transform: scale(1.1);
+
+}
+
+footer{
+    background: black;
+    padding:30px ;
+    color:white;
+    text-align: center;
+}
+
+@media screen and (max-width:760px){
+    .about-layout{
+        grid-templet-columns:1fr;
+    }
+    .value-flex{
+        flex-direction: column;
+    }
+    .destenations-grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media screen and (max-width: 540px){
+    .navbar img{
+        margin:auto;
+        margin-bottom: 20px;
+    }
+
+    .navbar-links{
+        margin:auto;
+       
+    }
+    .hero-title{
+        font-size:55px;
+    }
+    .hero-lead{
+        font-size:20px;
+    }
+
+}
+
+.trk{
+      height: 200px;
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('/trk1.jpg');
+    color: aliceblue;
+    text-align: center;
+    padding-top: 40px;
+    margin-top: 20px;
+
+
+}
+.trk1{
+    font-size: 80px;
+
+}
+.map{
+    height: 400px;
+    width: 100%;
+}
+
+.trk3{
+    font-size: 30px;
+}
+.trk2{
+    text-align: center;
+}
+.abut{
+     height: 200px;
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('/trk1.jpg');
+    color: aliceblue;
+    text-align: center;
+    padding-top: 40px;
+    margin-top: 20px;
+}
